@@ -12,7 +12,7 @@
         method: "POST",
         mode: "no-cors",
         headers: {
-            Authorization: `Basic ${Buffer.from("Administrator:asdfgh"/** adjust the credential of yours */).toString("base64").toString("base64")}`
+            Authorization: `Basic ${Buffer.from("administrator:administrator"/** adjust the credential of yours */).toString("base64")}`
         },
         body: new URLSearchParams({
             name: "ecommerce",
@@ -27,7 +27,7 @@
             method: "POST",
             mode: "no-cors",
             headers: {
-                Authorization: `Basic ${Buffer.from("Administrator:asdfgh"/** adjust the credential of yours */).toString("base64")}`
+                Authorization: `Basic ${Buffer.from("administrator:administrator"/** adjust the credential of yours */).toString("base64")}`
             },
             body: new URLSearchParams({
                 name: collection,
