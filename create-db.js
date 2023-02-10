@@ -19,7 +19,7 @@
             bucketType: "couchbase",
             ramQuota: "512"
         })
-    }).then(data => data.text()).then(data => console.log("bucket created"))
+    }).then(data => data.text()).then(data => console.log("bucket created", data))
 
     // create collections on default scope
     for await (const collection of ["Users", "Invertory", "Addresses", "Carts", "Discounts", "Products", "Roles", "Sessions"]) {
