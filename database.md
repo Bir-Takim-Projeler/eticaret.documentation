@@ -22,9 +22,10 @@ to create user, use credentials below
 #### clone eticaret.scripts repo
 
 ```bash
+# or basically `git clone` if you dont use it in other projects
 npx degit https://github.com/takimbirprojeler/eticaret.scripts.git scripts
 ```
--degit clones git repositories without create local referance
+ *note: `degit` clones git repositories without create local referance*
 
 #### run script
 
