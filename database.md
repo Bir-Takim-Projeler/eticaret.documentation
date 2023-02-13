@@ -12,14 +12,29 @@ docker run -d --name ecommerce -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:1120
 
 after container stand up
 visit http://localhost:8091
-use credentials below
+to create user, use credentials below
 - username = administrator
 - password = administrator
 
 
-create buckets and collections under _default scope run script below
+## create buckets, collections, and seed with data
 
-`npx run-url https://raw.githubusercontent.com/takimbirprojeler/eticaretmain/main/create-db.js`
+#### clone eticaret.scripts repo
 
+```bash
+npx degit https://github.com/takimbirprojeler/eticaret.scripts.git scripts
+```
+-degit clones git repositories without create local referance
 
+#### run script
 
+*Use git bash on windows*
+
+```bash
+cd scripts
+```
+
+```bash
+bash create-db.sh .
+```
+*"." is relative path of create-db.sh script, if your terminal in same directory leave it as "."*
