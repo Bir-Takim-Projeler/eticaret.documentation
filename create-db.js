@@ -12,14 +12,14 @@
         method: "POST",
         mode: "no-cors",
         headers: {
-            Authorization: `Basic ${Buffer.from("Administrator:asdfgh"/** adjust the credential of yours */).toString("base64").toString("base64")}`
+            Authorization: `Basic ${Buffer.from("administrator:administrator"/** adjust the credential of yours */).toString("base64")}`
         },
         body: new URLSearchParams({
             name: "ecommerce",
             bucketType: "couchbase",
             ramQuota: "512"
         })
-    }).then(data => data.text()).then(data => console.log("bucket created"))
+    }).then(data => data.text()).then(data => console.log("bucket created", data))
 
     // create collections on default scope
     for await (const collection of ["Users", "Invertory", "Addresses", "Carts", "Discounts", "Products", "Roles", "Sessions"]) {
@@ -27,7 +27,7 @@
             method: "POST",
             mode: "no-cors",
             headers: {
-                Authorization: `Basic ${Buffer.from("Administrator:asdfgh"/** adjust the credential of yours */).toString("base64")}`
+                Authorization: `Basic ${Buffer.from("administrator:administrator"/** adjust the credential of yours */).toString("base64")}`
             },
             body: new URLSearchParams({
                 name: collection,
