@@ -66,3 +66,9 @@ zsh scripts/create-db.sh [flags, ie --dev, --test] [args, ie CB_USERNAME=adminis
 ```bash
 zsh scripts/create-db.sh --dev CB_HOST=127.0.0.1 CB_PASSWORD=mysupersecretusername
 ```
+___
+## files
+
+ [create-db.sh](https://github.com/takimbirprojeler/eticaret.scripts/blob/main/create-db.sh)
+## licanse
+MIT
