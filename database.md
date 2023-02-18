@@ -51,15 +51,15 @@ zsh scripts/create-db.sh [flags, ie --dev, --test] [args, ie CB_USERNAME=adminis
 
 #### arguments
 
-`CB_USERNAME` username of couchbase cluster; default: *administrator*
-`CB_PASSWORD` password of couchbase cluster; default: *administrator*
-`CB_CONTAINER_PREFIX` prefix name of coucbase containers; default: *ecommerce*
-`CB_CLUSTER_NAME` couchbase cluster name; default: *ecommerce*
-`CB_BUCKET_NAME` couchbase bucket name; default: `CB_CLUSTER_NAME`
-`CB_SCOPE_NAME` name of the scope; default: *_default*
-`CB_HOST` hostname for couchbase instance; default: *localhost*
-`CB_PORT` port of coucbase instance; default: *8091*
-`CB_COLLECTIONS` list of collection seperated by `,` default: `user,inventory,address,cart,discount,product,category,role,session,perm`
+`CB_USERNAME` username of couchbase cluster; default: *administrator*  
+`CB_PASSWORD` password of couchbase cluster; default: *administrator*  
+`CB_CONTAINER_PREFIX` prefix name of coucbase containers; default: *ecommerce*  
+`CB_CLUSTER_NAME` couchbase cluster name; default: *ecommerce*  
+`CB_BUCKET_NAME` couchbase bucket name; default: `CB_CLUSTER_NAME`  
+`CB_SCOPE_NAME` name of the scope; default: *_default*  
+`CB_HOST` hostname for couchbase instance; default: *localhost*  
+`CB_PORT` port of coucbase instance; default: *8091*  
+`CB_COLLECTIONS` list of collection seperated by `,` default: `user,inventory,address,cart,discount,product,category,role,session,perm`  
 
 #### example
 
