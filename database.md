@@ -23,6 +23,12 @@ to create user, use credentials below
 - username = administrator
 - password = administrator
 
+## before start
+delete existing containers 
+
+```bash
+ docker rm -f db db2 db3 ...
+ ```
 ## download
 
 
