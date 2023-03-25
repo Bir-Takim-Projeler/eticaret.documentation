@@ -6,7 +6,7 @@
 
 2.  check the public key:
     public key has an extension .pub
-
+ 
 3. add ssh public key to github
     check the link
         https://www.w3schools.com/git/git_remote_add_ssh.asp?remote=github
