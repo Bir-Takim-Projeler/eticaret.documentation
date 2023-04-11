@@ -42,7 +42,7 @@ evet submodulun dizininde kullanilan git komutlari sub module icin gecerli olur
 repository 0 dan clonlanmis ise, sub repositoryler submodules e eklenir ancak varsayilan olarak fetch/pull islemleri olmaz 
 ```bash
 # taze klonlanmis bir repository'e bagli sub modulleri cekmek icin
-git submodule update --init 
+git submodule update --init  
 
 # submoduledeki degisiklikleri fetch icin
 git submodule update --recursive
