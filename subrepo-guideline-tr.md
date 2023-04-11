@@ -30,3 +30,30 @@ Resimde goruldugu gibi submoduller githubda bu sekilde gosteriliyor.
 Artik bu klasorler sadece bir placeholder yada sembolik link gorevi goruyor o dizinlerin contenti baska bir repositorye ait
 
 
+## submodule ve git iliskisi
+
+### Parent repository de bir sey commitlenirse ne olur?
+sub moduller bu commitlerden etkilenmez. sub moduledeki degisiklikler takip edilmez
+
+### sub moduledeki degisiklikeri commitleyebilir miyim?
+evet submodulun dizininde kullanilan git komutlari sub module icin gecerli olur
+
+### sub moduldeki degisiklikleri nasil cekebilirim?
+repository 0 dan clonlanmis ise, sub repositoryler submodules e eklenir ancak varsayilan olarak fetch/pull islemleri olmaz 
+```bash
+# taze klonlanmis bir repository'e bagli sub modulleri cekmek icin
+git submodule update --init 
+
+# submoduledeki degisiklikleri fetch icin
+git submodule update --recursive
+
+# submoduledeki degisikleri pull icin
+git submodule update --remote --merge
+
+```
+submodule directorysinde normal bir sekilde git komutlarini kullanabilirsin
+```bash
+cd utils
+
+git add . && git commit -m "her hangi bir commit mesaji" && git push
+```
