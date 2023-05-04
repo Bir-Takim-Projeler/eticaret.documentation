@@ -1,2 +1,1 @@
-bot test commit2 
- 
+bot
