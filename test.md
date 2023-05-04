@@ -1,1 +1,1 @@
-bot test commit deneme
+bot test commit
