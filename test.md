@@ -1,1 +1,1 @@
-bot test 5
+bot test 7
